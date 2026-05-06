@@ -5,21 +5,37 @@ function App() {
   const [lugares, setLugares] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("Todas");
-
   useEffect(() => {
-    fetch("http://127.0.0.1:3001/lugares")
-      .then((res) => res.json())
-      .then((data) => setLugares(data))
-      .catch((error) => console.log(error));
-  }, []);
+    const data = [
+      {
+        nombre: "Bar Irlanda",
+        ubicacion: "Yerba Buena",
+        categoria: "Bar",
+        fuente: "Mock",
+      },
+      {
+        nombre: "Café Martínez",
+        ubicacion: "San Miguel de Tucumán",
+        categoria: "Café",
+        fuente: "Mock",
+      },
+      {
+        nombre: "Festival Norte",
+        ubicacion: "Tucumán",
+        categoria: "Evento",
+        fuente: "Mock",
+      },
+    ];
 
+    setLugares(data);
+  }, []);
   // Extraer categorías únicas para el filtro
   const categorias = ["Todas", ...new Set(lugares.map((lugar) => lugar.categoria))];
 
   // Filtrar lugares según búsqueda y categoría
   const filteredLugares = lugares.filter((lugar) => {
-    const matchesSearch = lugar.nombre.toLowerCase().includes(searchTerm.toLowerCase()) || 
-                          lugar.ubicacion.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesSearch = lugar.nombre.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      lugar.ubicacion.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = categoryFilter === "Todas" || lugar.categoria === categoryFilter;
     return matchesSearch && matchesCategory;
   });
@@ -60,7 +76,7 @@ function App() {
           {filteredLugares.map((lugar) => (
             <div key={lugar.id} className="card">
               <h3>{lugar.nombre}</h3>
-              
+
               <div className="card-content">
                 <div className="info-row">
                   <strong>Ubicación</strong>
