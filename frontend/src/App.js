@@ -8,25 +8,48 @@ function App() {
   useEffect(() => {
     const data = [
       {
-        nombre: "Bar Irlanda",
-        ubicacion: "Yerba Buena",
-        categoria: "Bar",
-        fuente: "Mock",
-      },
-      {
-        nombre: "Café Martínez",
+        nombre: "Bar Irlanda Tucumán",
         ubicacion: "San Miguel de Tucumán",
-        categoria: "Café",
-        fuente: "Mock",
+        categoria: "Bar",
+        fuente: "mock",
+        estado: "Activo",
       },
       {
-        nombre: "Festival Norte",
+        nombre: "Café Martinez",
+        ubicacion: "Yerba Buena",
+        categoria: "Café",
+        fuente: "mock",
+        estado: "Activo",
+      },
+      {
+        nombre: "Irlanda Bar",
+        ubicacion: "San Miguel de Tucumán",
+        categoria: "Clasificado Con IA",
+        fuente: "mock",
+        estado: "Activo",
+      },
+      {
+        nombre: "La Negra Restaurante",
+        ubicacion: "Yerba Buena",
+        categoria: "Clasificado Con IA",
+        fuente: "mock",
+        estado: "Activo",
+      },
+      {
+        nombre: "Teatro Mercedes Sosa",
+        ubicacion: "San Miguel de Tucumán",
+        categoria: "Clasificado Con IA",
+        fuente: "mock",
+        estado: "Activo",
+      },
+      {
+        nombre: "Recital en Club Floresta",
         ubicacion: "Tucumán",
-        categoria: "Evento",
-        fuente: "Mock",
+        categoria: "Clasificado Con IA",
+        fuente: "mock",
+        estado: "Activo",
       },
     ];
-
     setLugares(data);
   }, []);
   // Extraer categorías únicas para el filtro
