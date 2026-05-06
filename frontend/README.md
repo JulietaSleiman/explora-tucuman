@@ -19,6 +19,12 @@ Desarrollado como prueba técnica utilizando automatización, procesamiento de d
 
 ![API](./screenshots/api.png)
 
+## Demo
+
+Frontend desplegado en Vercel:
+
+https://julietasleiman-explora-tucuman-5hts6uyuf.vercel.app
+
 # Tecnologías utilizadas
 
 ## Backend
