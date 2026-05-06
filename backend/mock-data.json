@@ -1,0 +1,26 @@
+[
+    {
+        "nombre": "Irlanda Bar",
+        "ubicacion": "San Miguel de Tucumán",
+        "categoria": "",
+        "fuente": "mock"
+    },
+    {
+        "nombre": "La Negra Restaurante",
+        "ubicacion": "Yerba Buena",
+        "categoria": "",
+        "fuente": "mock"
+    },
+    {
+        "nombre": "Teatro Mercedes Sosa",
+        "ubicacion": "San Miguel de Tucumán",
+        "categoria": "",
+        "fuente": "mock"
+    },
+    {
+        "nombre": "Recital en Club Floresta",
+        "ubicacion": "Tucumán",
+        "categoria": "",
+        "fuente": "mock"
+    }
+]
