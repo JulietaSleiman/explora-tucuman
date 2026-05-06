@@ -13,6 +13,7 @@ function App() {
         categoria: "Bar",
         fuente: "mock",
         estado: "Activo",
+        activo: true,
       },
       {
         nombre: "Café Martinez",
@@ -20,6 +21,7 @@ function App() {
         categoria: "Café",
         fuente: "mock",
         estado: "Activo",
+        activo: true,
       },
       {
         nombre: "Irlanda Bar",
@@ -27,6 +29,7 @@ function App() {
         categoria: "Clasificado Con IA",
         fuente: "mock",
         estado: "Activo",
+        activo: true,
       },
       {
         nombre: "La Negra Restaurante",
@@ -34,6 +37,7 @@ function App() {
         categoria: "Clasificado Con IA",
         fuente: "mock",
         estado: "Activo",
+        activo: true,
       },
       {
         nombre: "Teatro Mercedes Sosa",
@@ -41,6 +45,7 @@ function App() {
         categoria: "Clasificado Con IA",
         fuente: "mock",
         estado: "Activo",
+        activo: true,
       },
       {
         nombre: "Recital en Club Floresta",
@@ -48,6 +53,7 @@ function App() {
         categoria: "Clasificado Con IA",
         fuente: "mock",
         estado: "Activo",
+        activo: true,
       },
     ];
     setLugares(data);
